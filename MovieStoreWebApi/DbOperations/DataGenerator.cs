@@ -85,6 +85,8 @@ public class DataGenerator
                     GenreId = 2,
                     Price = 75
                 });
+
+                context.SaveChanges();
         }
     }
 }

@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "uRPzqs5EjEzCt9y8TsyCooZPTGTiB1HMsH5n5cdhnnVgwWAFisqiQmpUcTsBy6V6bnLakfwZhXNPEBMF1ChK2w==",
+  "dgSpecHash": "6AJmjIf/9rlCoC9dsko59sjVagRwusLihn6XBRjJ/rHU2GoxmUAjquuJru4wef3ldyQcM48hB4+HCNpmQpa8YQ==",
   "success": true,
   "projectFilePath": "D:\\Pratikler\\OrnekWebApi\\MovieStore\\MovieStoreWebApi\\MovieStoreWebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
     "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.0\\microsoft.entityframeworkcore.6.0.0.nupkg.sha512",
     "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.0\\microsoft.entityframeworkcore.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\mtarik.dumanli\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.0\\microsoft.entityframeworkcore.analyzers.6.0.0.nupkg.sha512",

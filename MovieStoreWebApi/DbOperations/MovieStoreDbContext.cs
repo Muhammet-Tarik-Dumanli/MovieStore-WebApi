@@ -18,6 +18,6 @@ public class MovieStoreDbContext : DbContext, IMovieStoreDbContext
 
     public int SaveChanges()
     {
-        throw new NotImplementedException();
+        return base.SaveChanges();
     }
 }
