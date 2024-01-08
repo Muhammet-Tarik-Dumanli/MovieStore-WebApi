@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieStoreWebApi", "MovieStoreWebApi\MovieStoreWebApi.csproj", "{60148CB3-94A7-4991-A44C-CCD25431AEFA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MovieStoreWebApi.UnitTests", "MovieStoreWebApi.UnitTests", "{2C1E99A0-FA13-4EBB-AAFA-5569FE8FB2F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.UnitTests", "MovieStoreWebApi.UnitTests\WebApi.UnitTests\WebApi.UnitTests.csproj", "{77B36A32-6F25-47A6-AD1B-B4396A77CBF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{60148CB3-94A7-4991-A44C-CCD25431AEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60148CB3-94A7-4991-A44C-CCD25431AEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60148CB3-94A7-4991-A44C-CCD25431AEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77B36A32-6F25-47A6-AD1B-B4396A77CBF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77B36A32-6F25-47A6-AD1B-B4396A77CBF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77B36A32-6F25-47A6-AD1B-B4396A77CBF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77B36A32-6F25-47A6-AD1B-B4396A77CBF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77B36A32-6F25-47A6-AD1B-B4396A77CBF6} = {2C1E99A0-FA13-4EBB-AAFA-5569FE8FB2F2}
 	EndGlobalSection
 EndGlobal
