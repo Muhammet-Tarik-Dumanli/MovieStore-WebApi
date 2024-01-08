@@ -5,6 +5,9 @@ using MovieStoreWebApi.Application.ActorOperations.Queries.GetActors;
 using MovieStoreWebApi.Application.CustomerOperations.Commands.CreateCustomer;
 using MovieStoreWebApi.Application.CustomerOperations.Queries.GetCustomerDetail;
 using MovieStoreWebApi.Application.CustomerOperations.Queries.GetCustomers;
+using MovieStoreWebApi.Application.DirectorOperations.Commands.CreateDirector;
+using MovieStoreWebApi.Application.DirectorOperations.Queries.GetDirectorDetail;
+using MovieStoreWebApi.Application.DirectorOperations.Queries.GetDirectors;
 using MovieStoreWebApi.Entities;
 
 namespace MovieStoreWebApi.Common
@@ -23,6 +26,10 @@ namespace MovieStoreWebApi.Common
             CreateMap<CreateCustomerModel, Customer>();
             CreateMap<Customer, GetCustomerDetailModel>();
             CreateMap<Customer, GetCustomersModel>();
+
+            CreateMap<CreateDirectorModel, Director>();
+            CreateMap<Director, GetDirectorDetailModel>().ForMember(c => c.Movies, c => c.MapFrom(c => c.Movies.Select(c => c.Name).ToList()));
+            CreateMap<Director, GetDirectorsModel>().ForMember(c => c.Movies, c => c.MapFrom(c => c.Movies.Select(c => c.Name).ToList()));
         }
     }
 }
