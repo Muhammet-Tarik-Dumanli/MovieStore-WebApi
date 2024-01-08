@@ -6,6 +6,6 @@ public class GetActorDetailQueryValidator : AbstractValidator<GetActorDetailQuer
 {
     public GetActorDetailQueryValidator()
     {
-        RuleFor(c => c.ActorId).GreaterThan(0);
+        RuleFor(query => query.ActorId).GreaterThan(0);
     }
 }

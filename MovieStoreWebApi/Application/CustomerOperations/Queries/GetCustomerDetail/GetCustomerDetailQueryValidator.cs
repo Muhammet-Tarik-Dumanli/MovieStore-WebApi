@@ -6,6 +6,6 @@ public class GetCustomerDetailQueryValidator : AbstractValidator<GetCustomerDeta
 {
     public GetCustomerDetailQueryValidator()
     {
-        RuleFor(c => c.CustomerId).GreaterThan(0);
+        RuleFor(query => query.CustomerId).GreaterThan(0);
     }
 }

@@ -6,6 +6,6 @@ public class GetOrderDetailQueryValidator : AbstractValidator<GetOrderDetailQuer
 {
     public GetOrderDetailQueryValidator()
     {
-        RuleFor(c => c.OrderId).GreaterThan(0);
+        RuleFor(query => query.OrderId).GreaterThan(0);
     }
 }

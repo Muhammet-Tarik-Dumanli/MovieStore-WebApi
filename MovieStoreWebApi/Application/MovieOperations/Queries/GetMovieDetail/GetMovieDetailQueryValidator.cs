@@ -6,6 +6,6 @@ public class GetMovieDetailQueryValidator : AbstractValidator<GetMovieDetailQuer
 {
     public GetMovieDetailQueryValidator()
     {
-        RuleFor(c => c.MovieId).GreaterThan(0);
+        RuleFor(query => query.MovieId).GreaterThan(0);
     }
 }

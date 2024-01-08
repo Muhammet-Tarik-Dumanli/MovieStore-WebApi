@@ -15,6 +15,7 @@ D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Microsoft.
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Pratikler\OrnekWebApi\MovieStore\MovieStoreWebApi\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll

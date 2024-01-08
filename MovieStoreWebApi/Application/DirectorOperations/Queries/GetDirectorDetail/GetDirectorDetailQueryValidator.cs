@@ -6,6 +6,6 @@ public class GetDirectorDetailQueryValidator : AbstractValidator<GetDirectorDeta
 {
     public GetDirectorDetailQueryValidator()
     {
-        RuleFor(c => c.DirectorId).GreaterThan(0);
+        RuleFor(query => query.DirectorId).GreaterThan(0);
     }
 }
