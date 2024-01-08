@@ -33,4 +33,21 @@ public class CreateActorCommandTests : IClassFixture<CommonTestFixture>
             .Invoking(() => command.Handle())
             .Should().ThrowAsync<InvalidOperationException>("Eklemek istenilen oyuncu zaten mevcut!");
     }
+
+    [Fact]
+    public void WhenValidInputsAreGiven_Actor_ShouldBeCreated()
+    {
+        CreateActorCommand command = new CreateActorCommand(_context, _mapper);
+        CreateActorModel model = new CreateActorModel()
+        {
+            Name = "WhenValidInputsAreGiven_",
+            LastName = "Actor_ShouldBeCreated"
+        };
+        command.Model = model;
+        
+        FluentActions
+            .Invoking(() => command.Handle().GetAwaiter().GetResult()).Invoke();
+
+        var actor = _context.Actors.SingleOrDefault(q => q.Name == model.Name && q.LastName == model.LastName);
+    }
 }
