@@ -8,6 +8,9 @@ using MovieStoreWebApi.Application.CustomerOperations.Queries.GetCustomers;
 using MovieStoreWebApi.Application.DirectorOperations.Commands.CreateDirector;
 using MovieStoreWebApi.Application.DirectorOperations.Queries.GetDirectorDetail;
 using MovieStoreWebApi.Application.DirectorOperations.Queries.GetDirectors;
+using MovieStoreWebApi.Application.MovieOperations.Commands.CreateMovie;
+using MovieStoreWebApi.Application.MovieOperations.Queries.GetMovieDetail;
+using MovieStoreWebApi.Application.MovieOperations.Queries.GetMovies;
 using MovieStoreWebApi.Entities;
 
 namespace MovieStoreWebApi.Common
@@ -30,6 +33,11 @@ namespace MovieStoreWebApi.Common
             CreateMap<CreateDirectorModel, Director>();
             CreateMap<Director, GetDirectorDetailModel>().ForMember(c => c.Movies, c => c.MapFrom(c => c.Movies.Select(c => c.Name).ToList()));
             CreateMap<Director, GetDirectorsModel>().ForMember(c => c.Movies, c => c.MapFrom(c => c.Movies.Select(c => c.Name).ToList()));
+
+            CreateMap<CreateMovieModel, Movie>();
+            CreateMap<Movie, GetMovieDetailModel>().ForMember(c => c.Genre, c => c.MapFrom(c => c.Genre.Name)).ForMember(c => c.Director, c => c.MapFrom(c => c.Director.Name + " " + c.Director.LastName)).ForMember(c => c.Actors, c => c.MapFrom(c => c.Actors.Select(c => c.Name + " " + c.LastName).ToList()));
+            CreateMap<Movie, GetMoviesModel>().ForMember(c => c.Genre, c => c.MapFrom(c => c.Genre.Name)).ForMember(c => c.Director, c => c.MapFrom(c => c.Director.Name +" "+ c.Director.LastName)).ForMember(c => c.Actors, c => c.MapFrom(c => c.Actors.Select(c => c.Name + " "+c.LastName).ToList()));
+
         }
     }
 }
